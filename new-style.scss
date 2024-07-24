@@ -1,0 +1,10 @@
+body {
+  > div {
+    > div {
+      max-width: 800px;
+      div {
+        border: 1px solid black;
+      }
+    }
+  }
+}

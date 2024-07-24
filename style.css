@@ -1,0 +1,49 @@
+/* Style for the character cards container */
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 16px; /* Add some space between the cards */
+}
+
+/* Style for each card */
+.card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(33.333% - 32px); /* Adjust width with gap included */
+  height: 400px; /* Fixed height for all cards */
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+/* Different colors for different elements in the card */
+.card h2 {
+  color: #ff5733; /* Change to your preferred color */
+  margin: 0;
+}
+
+.card h3 {
+  color: #33a1ff; /* Change to your preferred color */
+  margin: 0;
+}
+
+.card h4 {
+  color: #28a745; /* Change to your preferred color */
+  margin: 0;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 200px; /* Ensure the image fits within the fixed card height */
+  width: auto;
+  height: auto;
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  display: block;
+  margin-top: 16px;
+}
